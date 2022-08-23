@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "all": "run-s lint test",
-    "lint": "eslint ../dmnlint-pack-config-cody",
+    "lint": "eslint ../dmnlint-pack-config",
     "test": "mocha 'test/*.js'"
   },
   "bin": {
