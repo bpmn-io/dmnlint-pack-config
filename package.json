@@ -1,0 +1,49 @@
+{
+  "name": "dmnlint-pack-config",
+  "version": "0.7.0",
+  "description": "Pack dmnlint config to a browser consumable bundle",
+  "main": "index.js",
+  "scripts": {
+    "all": "run-s lint test",
+    "lint": "eslint ../dmnlint-pack-config-cody",
+    "test": "mocha 'test/*.js'"
+  },
+  "bin": {
+    "dmnlint-pack-config": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bpmn-io/dmnlint-pack-config.git"
+  },
+  "keywords": [
+    "dmnlint",
+    "browser-pack"
+  ],
+  "author": {
+    "name": "bpmn.io",
+    "url": "https://github.com/bpmn-io"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "dmnlint": "^0.2.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-bpmn-io": "^0.12.0",
+    "mocha": "^9.1.1",
+    "npm-run-all": "^4.1.3"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "meow": "^5.0.0",
+    "rollup": "^2.56.3",
+    "rollup-plugin-dmnlint": "^0.1.0"
+  },
+  "peerDependencies": {
+    "dmnlint": "^0.2.0"
+  },
+  "files": [
+    "bin",
+    "index.js"
+  ]
+}
