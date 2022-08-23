@@ -1,0 +1,1 @@
+# dmnlint-pack-config
